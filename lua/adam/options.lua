@@ -12,7 +12,8 @@ local options = {
     signcolumn = "no",
     smartcase = true,
     hlsearch = true,
-    -- termguicolors = true,
+    termguicolors = true,
+    syntax = "on",
     -- signcolumn = "yes",
     completeopt = { "menuone", "noselect" },
 
@@ -33,4 +34,5 @@ for k,v in pairs(options) do
 end
 
 vim.cmd [[set iskeyword+=-]]
-vim.cmd [[set formatoptions-=cro]]
+vim.cmd [[set formatoptions-=cro]]  -- TODO: disable continuing comment on <cr>
+

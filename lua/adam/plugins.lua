@@ -44,6 +44,8 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim"  -- packer manages itself
   use "nvim-lua/popup.nvim"  -- popup API for neovim
   use "nvim-lua/plenary.nvim"  -- common lua functions
+  use "ellisonleao/gruvbox.nvim"  -- gruvbox colors
+  use "preservim/nerdtree"  -- better file explorer
 
   -- automatically set up your configuration
   if PACKER_BOOTSTRAP then

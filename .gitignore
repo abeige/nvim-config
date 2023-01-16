@@ -1,2 +1,3 @@
 *.old
-*/packer-compiled.lua
+*/packer_compiled.lua
+
