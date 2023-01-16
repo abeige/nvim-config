@@ -27,6 +27,7 @@ local options = {
 	smartindent = true,
     autoindent = true,
     softtabstop = 4,
+
 }
 
 for k,v in pairs(options) do
@@ -35,4 +36,7 @@ end
 
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]]  -- TODO: disable continuing comment on <cr>
+
+-- nerdtree
+vim.g.NERDTreeShowHidden = 1  -- show hidden files by default
 

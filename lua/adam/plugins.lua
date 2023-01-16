@@ -40,12 +40,23 @@ packer.init {
 
 -- install plugins here
 return packer.startup(function(use)
-  -- My plugins here
   use "wbthomason/packer.nvim"  -- packer manages itself
   use "nvim-lua/popup.nvim"  -- popup API for neovim
   use "nvim-lua/plenary.nvim"  -- common lua functions
+
   use "ellisonleao/gruvbox.nvim"  -- gruvbox colors
   use "preservim/nerdtree"  -- better file explorer
+
+  -- cmp plugins
+  use "hrsh7th/nvim-cmp"  -- completion
+  use "hrsh7th/cmp-buffer"  -- buffer completion
+  use "hrsh7th/cmp-path"  -- path completion
+  use "hrsh7th/cmp-cmdline"  -- cmdline completion
+  use "saadparwaiz1/cmp_luasnip"  -- snippet completion
+
+  -- snippets
+  use "L3MON4D3/LuaSnip"  -- snippet engine
+  use "rafamadriz/friendly-snippets"  -- snippets
 
   -- automatically set up your configuration
   if PACKER_BOOTSTRAP then
