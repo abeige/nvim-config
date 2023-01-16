@@ -1,1 +1,2 @@
+require "adam.options"
 
