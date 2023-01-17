@@ -9,12 +9,11 @@ local options = {
 	wrap = false,
     splitbelow = true,
     splitright = true,
-    signcolumn = "no",
     smartcase = true,
     hlsearch = true,
     termguicolors = true,
     syntax = "on",
-    -- signcolumn = "yes",
+    signcolumn = "yes",
     completeopt = { "menuone", "noselect" },
 
 	guicursor = "n-v-sm:hor20,i-ci-ve-c:ver25-Cursor,r-cr-o:block," ..

@@ -6,6 +6,9 @@ if not status_ok then
   return
 end
 
+-- note: Once the cursor was disappearing when I opened a python file.
+--       I don't know what fixed it but try commenting out the below section
+--       and then adding pieces back in half at a time.
 require("gruvbox").setup({
   undercurl = true,
   underline = true,
