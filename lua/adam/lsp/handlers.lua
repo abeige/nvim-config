@@ -85,7 +85,16 @@ M.on_attach = function(client, bufnr)
 	if not status_ok then
 		return
 	end
+
 	illuminate.on_attach(client)
+    illuminate.configure({
+        filetypes_denylist = {
+            -- 'dirbuf',
+            -- 'dirvish',
+            -- 'fugitive',
+            'nerdtree',
+        },
+    })
 end
 
 return M

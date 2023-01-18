@@ -46,6 +46,7 @@ return packer.startup(function(use)
 
   use "ellisonleao/gruvbox.nvim"  -- gruvbox colors
   use "preservim/nerdtree"  -- better file explorer
+  use "RRethy/vim-illuminate"  -- highlight same tokens
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp"  -- completion

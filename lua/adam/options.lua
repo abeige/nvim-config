@@ -34,7 +34,7 @@ for k,v in pairs(options) do
 end
 
 vim.cmd [[set iskeyword+=-]]
-vim.cmd [[set formatoptions-=cro]]  -- TODO: disable continuing comment on <cr>
+vim.cmd [[ autocmd VimEnter * setlocal formatoptions-=cro ]] -- no continuing comments
 
 -- nerdtree
 vim.g.NERDTreeShowHidden = 1  -- show hidden files by default

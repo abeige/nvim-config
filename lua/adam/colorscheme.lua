@@ -29,3 +29,10 @@ require("gruvbox").setup({
 
 vim.cmd("colorscheme gruvbox")
 
+-- for highlight groups look in
+-- ~/.local/share/nvim/site/pack/packer/start/gruvbox.nvim/lua/gruvbox
+
+-- illuminate
+-- vim.cmd [[ hi link LspReferenceRead CursorLine ]]
+-- vim.cmd [[ hi link LspReferenceText MatchParen ]]
+-- vim.cmd [[ hi link LspReferenceWrite CursorLine ]]
