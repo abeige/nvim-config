@@ -52,6 +52,7 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs"  -- automatically pair brackets and quotes
   use "numToStr/Comment.nvim"  -- easily comment stuff
   use "JoosepAlviste/nvim-ts-context-commentstring"  -- comment based on context
+  use "lewis6991/gitsigns.nvim"  -- git signs
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp"  -- completion
