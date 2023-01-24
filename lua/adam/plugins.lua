@@ -70,6 +70,9 @@ return packer.startup(function(use)
   use "nvim-telescope/telescope.nvim"
   use 'nvim-telescope/telescope-media-files.nvim' use "jose-elias-alvarez/null-ls.nvim" -- LSP diagnostics and code actions
 
+  -- Treesitter
+  use "nvim-treesitter/nvim-treesitter"
+
   -- automatically set up your configuration
   if PACKER_BOOTSTRAP then
     require("packer").sync()

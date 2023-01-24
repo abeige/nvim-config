@@ -4,4 +4,6 @@ require("adam.plugins")
 require("adam.colorscheme")
 require("adam.cmp")
 require("adam.lsp")
+require("adam.telescope")
+require("adam.treesitter")
 

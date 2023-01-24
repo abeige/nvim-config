@@ -33,8 +33,12 @@ for k,v in pairs(options) do
 	vim.opt[k] = v
 end
 
-vim.cmd [[set iskeyword+=-]]
-vim.cmd [[ autocmd VimEnter * setlocal formatoptions-=cro ]] -- no continuing comments
+-- make "-" part of the word
+vim.cmd [[ set iskeyword+=- ]]
+
+-- no continuing comments
+vim.cmd [[ autocmd BufEnter * set formatoptions-=cro ]]
+vim.cmd [[ autocmd BufEnter * setlocal formatoptions-=cro ]]
 
 -- nerdtree
 vim.g.NERDTreeShowHidden = 1  -- show hidden files by default
