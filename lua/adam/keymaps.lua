@@ -1,7 +1,6 @@
 -- shorten function + options
 local keymap = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
-local term_opts = { silent = true }
 
 -- leader key
 keymap("", "<Space>", "<Nop>", opts)
@@ -9,9 +8,10 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- open file explore with leader + e
-keymap("n", "<leader>e", ":NERDTreeToggle<cr>", opts)
+keymap("n", "<leader>n", ":NERDTreeFocus<cr>", opts)
+keymap("n", "<leader>f", ":Telescope find_files<cr>", opts)
 keymap("n", "<leader>w", ":w<cr>", opts)
-keymap("n", "<leader>x", ":wq<cr>", opts)
+keymap("n", "<leader>x", ":wqa<cr>", opts)
 
 -- window navigation
 keymap("n", "<A-h>", "<C-w>h", opts)

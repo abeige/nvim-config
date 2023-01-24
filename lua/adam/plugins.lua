@@ -65,7 +65,10 @@ return packer.startup(function(use)
   use "williamboman/nvim-lsp-installer"  -- language server installer
   use "williamboman/mason.nvim" -- simple to use language server installer
   use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
-  use "jose-elias-alvarez/null-ls.nvim" -- LSP diagnostics and code actions
+
+  -- telescope
+  use "nvim-telescope/telescope.nvim"
+  use 'nvim-telescope/telescope-media-files.nvim' use "jose-elias-alvarez/null-ls.nvim" -- LSP diagnostics and code actions
 
   -- automatically set up your configuration
   if PACKER_BOOTSTRAP then
