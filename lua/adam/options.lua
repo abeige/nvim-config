@@ -42,5 +42,5 @@ vim.cmd [[ autocmd BufEnter * setlocal formatoptions-=cro ]]
 
 -- nerdtree
 vim.g.NERDTreeShowHidden = 1  -- show hidden files by default
-vim.cmd [[ autocmd VimEnter * NERDTreeVCS ]]
+-- vim.cmd [[ autocmd VimEnter * NERDTreeVCS ]]  -- show on startup
 

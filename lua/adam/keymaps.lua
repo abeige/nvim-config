@@ -8,7 +8,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- open file explore with leader + e
-keymap("n", "<leader>n", ":NERDTreeFocus<cr>", opts)
+keymap("n", "<leader>n", ":NERDTreeVCS<cr>", opts)
 keymap("n", "<leader>f", ":Telescope find_files<cr>", opts)
 keymap("n", "<leader>w", ":w<cr>", opts)
 keymap("n", "<leader>x", ":wqa<cr>", opts)
