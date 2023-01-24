@@ -40,22 +40,18 @@ packer.init {
 
 -- install plugins here
 return packer.startup(function(use)
+  -- base
   use "wbthomason/packer.nvim"  -- packer manages itself
   use "nvim-lua/popup.nvim"  -- popup API for neovim
   use "nvim-lua/plenary.nvim"  -- common lua functions
 
+  -- utilities
   use "ellisonleao/gruvbox.nvim"  -- gruvbox colors
   use "preservim/nerdtree"  -- better file explorer
   use "RRethy/vim-illuminate"  -- highlight same tokens
   use "windwp/nvim-autopairs"  -- automatically pair brackets and quotes
-  use {  -- TODO: automatically pair html tags
-    "windwp/nvim-ts-autotag",
-    wants = "nvim-treesitter",
-    event = "InsertEnter",
-    config = function()
-      require("nvim-ts-autotag").setup { enable = true }
-    end,
-  }
+  use "numToStr/Comment.nvim"  -- easily comment stuff
+  use "JoosepAlviste/nvim-ts-context-commentstring"  -- comment based on context
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp"  -- completion

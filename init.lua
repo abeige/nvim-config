@@ -7,4 +7,5 @@ require("adam.lsp")
 require("adam.telescope")
 require("adam.treesitter")
 require("adam.autopairs")
+require("adam.comment")
 
